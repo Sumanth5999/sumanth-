@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Single Page Navigation</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      /* Style for the navigation menu */
+      #nav {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      #nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+      /* Style for the content sections */
+      .section {
+        padding: 20px;
+      }
+      /* Style for the active menu link */
+      .active {
+        color: #ff0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="section">
+      <h1>Welcome to my website!</h1>
+      <p>This is the home section.</p>
+    </section>
+
+    <section id="about" class="section" style="display: none;">
+      <h1>About me</h1>
+      <p>I am a web developer and this is my website.</p>
+    </section>
+
+    <section id="services" class="section" style="display: none;">
+      <h1>Services</h1>
+      <p>I offer web development and design services.</p>
+    </section>
+
+    <section id="contact" class="section" style="display: none;">
+      <h1>Contact me</h1>
+      <p>You can contact me at email@example.com.</p>
+    </section>
+    <script>
+      // Get all the links in the navigation menu
+      const links = document.querySelectorAll("#nav a");
+
+      // Add a click event listener to each link
+      links.forEach(link => {
+        link.addEventListener("click", e => {
+          // Prevent the default link behavior
+          e.preventDefault();
+
+          // Remove the active class from all links
+          links.forEach(link => {
+            link.classList.remove("active");
+          });
+
+          // Add the active class to the clicked link
+          e.target.classList.add("active");
+
+          // Get the id of the section to show
+          const sectionId = e.target.getAttribute("href");
+
+          // Hide all sections
+          const sections = document.querySelectorAll(".section");
+          sections.forEach(section => {
+            section.style.display = "none";
+          });
+
+          // Show the selected section
+          document.querySelector(sectionId).style.display = "block";
+        });
+      });
+    </script>
+  </body>
+</html>
