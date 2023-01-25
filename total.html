@@ -1,0 +1,390 @@
+[8:16 AM, 1/21/2023] Deepak Ronen: html>
+<head>
+<title>Concepts Implementation</title>
+<style>
+#nav
+{
+background-color:#000;
+padding:10px;
+}
+.nav_Links:hover
+{
+color:#ff4500;
+font-size:20px;
+font-style:impact;
+}
+.nav_Links
+{
+text-decoration:none;
+color:#fff;
+padding-left:60px;
+}
+.head_text
+{
+background-color:#00008B;
+color:#fff;
+text-align:center;
+padding:5px;
+}
+.text_stroke
+{
+font-size:60px;
+text-align:center;
+}
+.images
+{
+margin-bottom:25px;
+}
+#youtube_hover:hover
+{
+background-color:#FF0000;
+color:#fff;
+border-radius:10px;
+display:inline;
+padding:10px;
+}
+#join_hover:hover
+{
+border:2px solid #1E90FF;
+padding:10px;
+color:#1E90FF;
+display:inline;
+}
+#tweet_hover:hover
+{
+background-color:#1E90FF;
+color:#fff;
+border-radius:20px;
+display:inline;
+padding:10px 30px 10px 30px;
+}
+#nike_hover:hover
+{
+font-weight:bold;
+font-size:30px;
+font-style:Bodoni MT Black;
+text-shadow:3px 3px #696969;
+}
+#canon_hover:hover
+{
+font-size:30px;
+color:#FF0000;
+}
+#visited_link:visited
+{
+color:#6A5ACD;
+}
+#active_link:active
+{
+color:#fff;
+background-color:#0000FF;
+border:2px groove #ff0000;
+text-align:center;
+display:inline;
+padding:10px;
+border-radius:50px;
+}
+#link1:link
+{
+color:#ffffff;
+}
+#attribute
+{
+text-align:center;
+}
+img[id="hr"]
+{
+border:2px solid #ff0000;
+margin-left:-10px;
+box-shadow:10px 10px 10px #FF00FF;
+}
+img[class="student"]
+{
+border:2px solid #0000ff;
+margin-left:10px;
+box-shadow:10px 10px 10px #FF00FF;
+}
+img[id="hr"]:hover
+{
+border:10px solid #ff0000;
+border-radius:20px;
+}
+img[class="student"]:hover
+{
+border:10px solid #0000ff;
+border-radius:20px;
+}
+#hidden_overflow
+{
+border:2px solid #000;
+width:30%;
+height:200px;
+overflow:hidden;
+text-align:justify;
+padding:10px;
+}
+#visible_overflow
+{
+border:2px solid #000;
+width:30%;
+height:200px;
+overflow:visible;
+text-align:justify;
+padding:10px;
+}
+#scroll_overflow
+{
+border:2px solid #000;
+width:30%;
+height:200px;
+overflow:scroll;
+text-align:justify;
+padding:10px;
+}
+#auto_overflow
+{
+border:2px solid #000;
+width:30%;
+height:200px;
+overflow:auto;
+text-align:justify;
+padding:10px;
+}
+</style>
+</head>
+<body style="background-color:#FFFF00">
+
+<div id="nav">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\Img28.png" alt="couldn't load an image" height="30px" width="30px">
+<a class="nav_Links" href="#overflow">Overflow</a>
+<a class="nav_Links" href="#format">Format Tags</a>
+<a class="nav_Links" href="#table">Table</a>
+<a class="nav_Links" href="#list">Lists</a>
+<a class="nav_Links" href="#text">Text</a>
+<a class="nav_Links" href="#attribute">Attribute</a>
+<a class="nav_Links" href="#cursor">cursor</a>
+<a class="nav_Links" href="#pseudo">Pseudo</a>
+<a class="nav_Links" href="#float">Float</a>
+<a class="nav_Links" href="#images">Images</a>
+</div>
+
+
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\Img36.gif" height="550px" width="100%">
+
+<div >
+<h1 class=head_text id=text>TEXT PROPERTIES</h1>
+<h3>1) text-align:left</h3>
+<h2 style="text-align:left; color:#8B0000">Ronen Software Solutions Pvt Ltd</h2><hr>
+<h3>2) text-align:right</h3>
+<h2 style="text-align:right; color:#8B0000">Ronen Software Solutions Pvt Ltd</h2><hr>
+<h3>3) text-align:center</h3>
+<h2 style="text-align: center; color:#8B0000">Ronen Software Solutions Pvt Ltd</h2><hr>
+<h3>4) text-align:justify</h3>
+<p style="text-align:justify">Engitech is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services. We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face.</p><hr>
+<h3>5) text-stroke</h3>
+<h1 class="text_stroke" style="-webkit-text-stroke:5px #FF00FF">Text Stroke</h1><hr>
+<h3>6) text-decoration properties</h3>
+<h2 style="text-decoration:line-through">text-decoration:line-through</h2>
+<h2 style="text-decoration:overline">text-decoration:overline</h2>
+<h2 style="text-decoration:underline">text-decoration:underline</h2>
+<h2 class="text_deco">text-decoration:none</h2><hr>
+<h3>7) text-transform</h3>
+<h2 style="text-transform:uppercase">I Love My India</h2>
+<h2 style="text-transform:lowercase">I Love My India</h2>
+<h2 style="text-transform:captilize">I Love My India</h2>
+<hr>
+<h3>8) text-indent</h3>
+<p style="text-align:justify; text-indent; ">Engitech is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services. We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face.</p>
+<h3>8) text-shadow</h3>
+<h2 style="text-shadow:2px 3px #00FFFF">!!!!!Welcome to Hyderabad!!!!!</h2><hr>
+</div>
+
+<h1 class=head_text id="format">FORMATTING TAGS</h1>
+<h2><b>Bold</b></h2><hr>
+<h2><i>Italic</i></h2><hr>
+<h2><u>Underline</u></h2><hr>
+<h2><strike>Strike</strike></h2><hr>
+<h2>H<sub>2</sub>O</h2><hr>
+<h2>(a+b)<sup>2</sup> = a<sup>2</sup>+b<sup>2</sup>+2ab</h2><hr>
+<h2><strong>Strong</strong></h2><hr>
+<h2><q>quotation</q></h2><hr>
+<h2><small>HARISH</small></h2><hr>
+<h2><del>Delete</del></h2><hr>
+<h2><abbr title="water">H20<abbr></h2><hr>
+<h2><tt>Type Writer</tt></h2><hr>
+<h2><bdo dir="ltr">Hii</bdo></h2><hr>
+<h2><bdo dir="rtl">Hii</bdo></h2><hr>
+
+
+<h1 class="head_text" id="list">LISTS</h1>
+<h3>UnOrdered List</h3>
+<h4 >Ordering doesn't matter.</font></h4>
+<ul>
+<li>Milk</font></li>
+<li>Suger</font></li>
+<li>Bread</font></li><br>
+</ul>
+<h3>Ordered List</h3>
+<h4>Ordering does matter.</h4>
+<ol>
+<li>Put the kettle on</font></li>
+<li>Put the teabag in the cup</font></li>
+<li>Wait for kettle to boil</font></li>
+<li>Pour boiling water in the cup</font></li>
+<br>
+</ol>
+
+
+<h1 class="head_text" id="table">TABLES</h1>
+<center><table style="border-collapse:collapse" border="1" height="100" width="300" >
+<caption>Table 1</caption>
+<tr align="center">
+<td>data 1</td>
+<td>data 2</td>
+<td>data 3</td>
+</tr>
+<tr align="center">
+<td>data 4</td>
+<td>data 5</td>
+<td>data 6</td>
+</tr>
+</table></center><br><hr><br>
+<table style="border-collapse:collapse" border="1" height="100" width="300" align="center">
+<caption>Table 2</caption>
+<tr align="center">
+<td>data 1</td>
+<td>data 2</td>
+<td>data 3</td>
+</tr>
+<tr align="center">
+<td colspan="2">data 4</td>
+<td>data 5</td>
+</tr>
+</table><br><hr>
+<table style="border-collapse:collapse" border="1" height="100" width="300" align="center">
+<caption>Table 3</caption>
+<tr align="center">
+<td rowspan="2">data 1</td>
+<td>data 2 </td>
+<td>data 3</td>
+</tr>
+<tr align="center">
+<td>data 4</td>
+<td>data 5</td>
+</table><br><hr>
+
+
+<h1 class="head_text" id="cursor">CURSOR PROPERTIES</h1>
+<h3>1) cursor pointer</h3>
+<p style="cursor:pointer; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>2) cursor wait</h3>
+<p style="cursor:wait; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>3) cursor help</h3>
+<p style="cursor:help; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>4) cursor copy</h3>
+<p style="cursor:copy; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>5) cursor zoom-in</h3>
+<p style="cursor:zoom-in; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>6) cursor zoom-out</h3>
+<p style="cursor:zoom-out; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>7) cursor not-allowed</h3>
+<p style="cursor:not-allowed; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+<h3>8) cursor alias</h3>
+<p style="cursor:alias; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>9) cursor auto</h3>
+<p style="cursor:auto; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>10) cursor col-resize</h3>
+<p style="cursor:col-resize; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>11) cursor cell</h3>
+<p style="cursor:cell; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California..</p><hr>
+
+<h3>12) cursor progress</h3>
+<p style="cursor:progress; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>13) cursor all-scroll</h3>
+<p style="cursor:all-scroll; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>14) cursor context-menu</h3>
+<p style="cursor:context-menu; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>15) cursor default</h3>
+<p style="cursor:default; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>16) cursor crosshair</h3>
+<p style="cursor:crosshair; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>17) cursor ew-resize</h3>
+<p style="cursor:ew-resize; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>18) cursor n-resize</h3>
+<p style="cursor:n-resize; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>19) cursor ne-resize</h3>
+<p style="cursor:pointer; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h3>20) cursor move</h3>
+<p style="cursor:move; text-align:justify";>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California.</p><hr>
+
+<h1 class="head_text" id="pseudo">PSEUDO ELEMENTS</h1>
+<center><u><h2>Mouse Hover</h2></u>
+<h2 id="youtube_hover">YouTube</h2>
+<h2 id="join_hover">JOIN</h2>
+<h2 id="tweet_hover">Tweet</h2>
+<i><h2 id="nike_hover">NIKE</h2></i>
+<h2 id="canon_hover">canon</h2><hr>
+<u><h2>Visited</h2></u>
+<a href="#"  id="visited_link" style="text-decoration:none">RONEN</a><hr>
+<u><h2>Active</h2></u>
+<h2 id="active_link">SUBMIT</h2><hr>
+<u><h2>Link</h2></u>
+<a href="#"  id="link1">CLICK HERE</a><hr>
+</center>
+
+<h1 class="head_text" id="attribute">ATTRIBUTE SELECTOR</h1>
+<div id="attribute">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\Img10.jpg" height="200" width="170" id="hr">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\Img35.jpeg" height="200" width="170" class="student">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\Img32.webp" height="200" width="170" class="student">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\Img34.jpeg" height="200" width="170" class="student">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\Ima33.jpeg" height="200" width="170" class="student">
+</div><br><br><hr>
+
+<h1 class=head_text id=overflow>OVERFLOW</h1>
+<u><h3 style="text-align:center">overflow:hidden</h3></u>
+<center><p id="hidden_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development para_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly .</p></center><hr>
+<u><h3 style="text-align:center">overflow:scroll</h3></u>
+<center><p id="scroll_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development para_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly .</p></center><hr>
+<u><h3 style="text-align:center">overflow:visible</h3></u>
+<center><p id="visible_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development para_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly .</p></center><br><br><br><br><br><br><br><hr>
+<u><h3 style="text-align:center">overflow:auto</h3></u>
+<center><p id="auto_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development para_overflow">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly .</p></center><hr>
+<center>
+<h1 class=head_text id=float>FLOAT</h1>
+<u><b>float left</b></u><br><br>
+<div style="border:2px solid #000; width:50%;">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\331335.jpg" height="42.5%" width="250"  style="float:left; margin:10px 10px 0px 10px ">
+<p style="text-align:justify; margin-right:5px;">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development para_overflow</p><br><br>
+</div><br><br>
+<u><b>float right</b></u><br><br>
+<div style="border:2px solid #000; width:50%;padding:5px;">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\331335.jpg" height="42.5%" width="250"  style="float:right; margin:10px 10px 0px 10px ">
+<p style="text-align:justify;">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development para_overflow</p><br><br>
+</div><br><br>
+<u><b>float none</b></u><br><br>
+<div style="border:2px solid #000; width:50%; padding:5px;">
+<img src="C:\Users\Harish\Desktop\HTML AND CSS\Images\331335.jpg" height="42.5%" width="250"  style="float:none;">
+<p style="text-align:justify;">Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development para_overflow</p>
+</center>
+</div>
+</div>
+</body>
+</html>
