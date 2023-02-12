@@ -1,0 +1,12 @@
+#banner {
+    background-color: #cccccc;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  #banner h1 {
+    color: #000000;
+    font-size: 36px;
+    margin: 0;
+  }
+  
