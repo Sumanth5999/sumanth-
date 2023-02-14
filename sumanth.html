@@ -12,6 +12,7 @@ height:100px;
 width: 63%;
 text-align: center;
 border: 1px solid black;
+line-height: 100px;
 }
 #ads{
 background-color:lightgreen;
@@ -19,6 +20,7 @@ height: 100px;
 width: 32%;
 text-align: center;
 border: 1px solid black;
+line-height: 100px;
 }
 #content{
 height:100px;
@@ -27,34 +29,36 @@ margin-top:10px;
 background-color:lightsteelblue;
 text-align: center;
 border: 1px solid black;
+line-height: 100px;
 }
 #navigation{
-height:410px;
+height:400px;
 width:200px;
-margin-top:-99px;
+margin-top:-103px;
 float:right;
 background-color:paleturquoise;
 text-align: center;
 border: 1px solid black;
+line-height: 400px;
 }
 
-#box1,#box2,#box3{
-height:300px;
-width: 285px;
-margin-top:15px;
-display:inline-block;
-margin-right:41px;
-background-color:#cccccc;
-text-align: center;
-border: 1px solid black;
-}
 #sumanth{
-height:300px;
+height:100px;
 width:100%;
-margin-top:100px;
 background-color:pink;
 text-align: center;
 border: 1px solid black;
+line-height: 100px;
+}
+
+.text{
+  background-color:#cccccc;
+  text-align: center;
+
+}
+#footer{
+ background-color:pink;
+ text-align: center;
 }
 </style>
 </head>
@@ -67,13 +71,13 @@ border: 1px solid black;
 
 <div id="content">slider</div>
 <div id="navigation">right box</div>
-
-<div id="pagecontent">
-    <div id="box">
-        <div id="box1">article</div>
-        <div id="box2">article</div>
-        <div id="box3">article</div>
-        </div>
-  <div id="sumanth">footer</div>      
+<br>
+<div>
+    <textarea class="text" name="manly" cols="36" rows="17">article</textarea>
+    <textarea class="text" name="manly" cols="36" rows="17">article</textarea>
+    <textarea class="text" name="manly" cols="36" rows="17">article</textarea>
+</div>
+<br>
+    <textarea id="footer" name="tinku" cols="180" rows="10">footer</textarea>     
 </body>
 </html>
